@@ -1,0 +1,485 @@
+<!-- https://team08-21.studenti.fiit.stuba.sk/ams/
+https://team08-21.studenti.fiit.stuba.sk/es01/
+https://team08-21.studenti.fiit.stuba.sk/api/
+https://team08-21.studenti.fiit.stuba.sk/scraper/
+https://team08-21.studenti.fiit.stuba.sk/docu/ -->
+
+<html>  
+    <head>
+        <title>AMS - Team 08 | TP 2021</title>
+
+        <meta charset="UTF-8">
+
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+        
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <script src="index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <div id="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">AMS</a>
+                  <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" data-target="#navbarNavDropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#project-info">projekt</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about-us">tím</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#sprintovanie">stretnutia & dokumenty</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          mapa domény
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a target="__blank" class="dropdown-item" href="https://team08-21.studenti.fiit.stuba.sk/ams/">AMS</a>
+                          <a target="__blank" class="dropdown-item" href="https://team08-21.studenti.fiit.stuba.sk/docu/">Dokumentácia</a>
+                          <a target="__blank" class="dropdown-item" href="https://team08-21.studenti.fiit.stuba.sk/api/">API</a>
+                          <a target="__blank" class="dropdown-item" href="https://team08-21.studenti.fiit.stuba.sk/scraper/">Scraper</a>
+                          <a target="__blank" class="dropdown-item" href="https://team08-21.studenti.fiit.stuba.sk/express/">Express</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">kontakt</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+
+        <section id="banner">
+          <div class="color-box"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="banner-section">
+                  <h1 class="banner-title">ADVERSE MEDIA</h1>
+                  <h1 class="banner-title">SCREENING</h1>
+                </div>
+
+              </div class="col-md-6 text-center">
+                <img src="images/man.png" class="man-img">
+              <div>
+              </div>
+            </div>
+          </div>
+          <img src="images/trans.svg" class="transition-img">
+        </section>
+
+        <section id="project-info">
+          <div class="container">
+            <h1 class="section-title">O PROJEKTE</h1>
+            <div class="project-goal">
+              <p>Cieľom projektu je vytvoriť portál na vyhľadávanie fyzických a právnických osôb s nepriaznivou povesťou, 
+                kde zdrojom informácií sú dostupné online médiá.</p>
+            </div>
+
+            <div class="row text-center">
+              <div class="col-md-4 info-box">
+                <div class="box">
+                  <h4 class="info-title">ČO JE ADVERSE MEDIA</h4>
+                  <h4 class="info-title">SCREENING?</h4>
+                  <p class="info-text">AMS je vyhľadávanie negatívnych informácií z médií
+                     spojených s danou osobou alebo spoločnosťou.</p>
+                </div>
+              </div>
+
+              <div class="col-md-4 info-box">
+                <div class="box">
+                  <h4 class="info-title">AKO TO BUDE VYZERAŤ?</h4>
+                  <p class="info-text">Do nášho softvéru stačí zadať meno osoby, alebo názov spoločnosti a 
+                    následne sa zobrazia články s kriminálnou aktivitou spojené s uvedeným menom.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 info-box">
+              <div class="box">
+                <h4 class="info-title">PRE KOHO JE NÁŠ PROJEKT?</h4>
+                <p class="info-text">Náš projekt je určený pre firmy a zamestnávateľov, ktorí si chcú overiť
+                   svojich potenciálnych partnerov, zamestnancov a podobne, z 
+                  hľadiska mediálnej povesti a potenciálnej kriminálnej aktivity.</p>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+        </section>
+
+
+        <section id="about-us">
+          <div class="container">
+            <h1 class="section-title">KTO SME?</h1>
+
+            <img src="images/profile_imgs/veduci.png" class="profile_img_veduci">
+            <h4 class="veduci">Ing. Richard Marko, PhD.</h4>
+
+            <div class="row text-center">
+
+              <div class="col-md-4 profiles">
+                <img src="images/profile_imgs/dado.png" class="profile_img">
+                <h4>Dávid Silady</h4>
+              </div>
+
+              <div class="col-md-4 profiles">
+                <img src="images/profile_imgs/dominko.png" class="profile_img">
+                <h4>Dominik Horváth</h4>
+              </div>
+
+              <div class="col-md-4 profiles">
+                <img src="images/profile_imgs/adam.png" class="profile_img">
+                <h4>Adam Šípka</h4>
+              </div>
+
+              <div class="col-md-4 profiles">
+                <img src="images/profile_imgs/moro.png" class="profile_img">
+                <h4>Jakub Müller</h4>
+              </div>
+
+              <div class="col-md-4 profiles">
+                <img src="images/profile_imgs/jakub.png" class="profile_img">
+                <h4>Jakub Hlavačka</h4>
+              </div>
+
+              <div class="col-md-4 profiles">
+                <img src="images/profile_imgs/tana.png" class="profile_img">
+                <h4>Táňa Poláková</h4>
+              </div>
+            
+            </div>
+          </div>
+        </section>
+
+        <section id="sprintovanie">
+          <div class="container">
+            <h1 class="section-title">STRETNUTIA & EXPORTY</h1>
+            
+            <div class="semesters text-center">
+              <a id="btn-winter-semester" type="button" class="right-flex btn-semester-active">Zimný semester</a>
+              <a id="btn-summer-semester" type="button" class="right-flex btn-semester-notactive">Letný semester</a>
+            </div>
+            
+
+            <div id="winter-semester" class="text-center">
+              
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 1</h3>
+                  <p>[nekonalo sa]</p>
+                </div>
+                <a class="sprinty right-flex btn-sprint-missing">Zápis zo stretnutia</a>
+
+                <a class="sprinty right-flex btn-sprint-missing">Export úloh</a>
+
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 2</h3>
+                </div>
+                <a target="__blank" href="/documents/zzs2.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/eu2.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 3</h3>
+                </div>
+                <a target="__blank" href="/documents/zzs3.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/eu3.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 4</h3>
+                  <p>[plán šprintu č. 1]</p>
+                </div>
+                <a target="__blank" href="/documents/zzs4.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/eu4.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 5</h3>
+                </div>
+                <a target="__blank" href="/documents/zzs5.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/eu5.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 6</h3>
+                  <p>[review šprintu č. 1, plán šprintu č. 2]</p>
+                </div>
+                <a target="__blank" href="/documents/zzs6.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/eu6.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 7</h3>
+                </div>
+                <a target="__blank" href="/documents/zzs7.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/eu7.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 8</h3>
+                  <p>[review šprintu č. 2, plán šprintu č. 3]</p>
+                </div>
+                <a target="__blank" href="/documents/zzs8.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/eu8.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 9</h3>
+                </div>
+                <a target="__blank" href="/documents/zzs9.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/eu9.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 10</h3>
+                  <p>[review šprintu č. 3, plán šprintu č. 4]</p>
+                </div>
+                <a target="__blank" href="/documents/zzs10.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/eu10.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 11</h3>
+                </div>
+                <a target="__blank" href="/documents/zzs11.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/eu11.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 12</h3>
+                  <p>[review šprintu č. 4, plán šprintu č. 5]</p>
+                </div>
+                <a target="__blank" href="/documents/zzs12.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/eu12.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 13</h3>
+                  <p>[review šprintu č. 5]</p>
+                </div>
+                <a target="__blank" href="/documents/zzs13.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/eu13.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+              </div>
+            </div>
+
+            <div id="summer-semester" class="text-center" style="display:none;">
+              
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 1</h3>
+                </div>
+                  <a target="__blank" href="/documents/zzsls1.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+                  <a class="sprinty right-flex btn-sprint-missing">Export úloh</a>
+                </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 2</h3>
+                  <p>[plán šprintu č. 6]</p>
+                </div>
+                <a target="__blank" href="/documents/zzsls2.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/euls2.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 3</h3>
+                </div>
+                <a target="__blank" href="/documents/zzsls3.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/euls3.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 4</h3>
+                  <p>[review šprintu č. 6, plán šprintu č. 7]</p>
+                </div>
+                <a target="__blank" href="/documents/zzsls4.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/euls4.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 5</h3>
+                </div>
+                <a target="__blank" href="/documents/zzsls5.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/euls5.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 6</h3>
+                  <p>[review šprintu č. 7, plán šprintu č. 8]</p>
+                </div>
+                <a target="__blank" href="/documents/zzsls6.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/euls6.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 7</h3>
+                </div>
+                <a target="__blank" href="/documents/zzsls7.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/euls7.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 8</h3>
+                  <p>[review šprintu č. 8, plán šprintu č. 9]</p>
+                </div>
+                <a target="__blank" href="/documents/zzsls8.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/euls8.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 9</h3>
+                </div>
+                <a target="__blank" href="/documents/zzsls9.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/euls9.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 10</h3>
+                  <p>[review šprintu č. 9, plán šprintu č. 10]</p>
+                </div>
+                <a target="__blank" href="/documents/zzsls10.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/euls10.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 11</h3>
+                </div>
+                <a target="__blank" href="/documents/zzsls11.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/euls11.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+
+              </div>
+
+              <div class="week-doc">
+                <div>
+                  <h3>Stretnutie v týždni 12</h3>
+                  <p>[review šprintu č. 10]</p>
+                </div>
+                <a target="__blank" href="/documents/zzsls12.pdf"><div class="sprinty right-flex btn-sprint">Zápis zo stretnutia</div></a>
+
+                <a target="__blank" href="/documents/euls12.pdf"><div class="sprinty right-flex btn-sprint">Export úloh</div></a>
+              </div>
+
+              
+            </div>
+          </div>
+
+          <div class="methodics text-center">
+            <h1 class="section-title">METODIKY</h1>
+            <a target="__blank" href="/documents/git_metodika.pdf" class="methodic"><div class="methodic-txt right-flex btn-sprint">Git metodika</div></a>
+            <a target="__blank" href="/documents/scrum_metodika.pdf" class="methodic"><div class="methodic-txt right-flex btn-sprint">SCRUM metodika</div></a>
+	          <a target="__blank" href="/documents/metodika_nasadzovania.pdf" class="methodic"><div class="methodic-txt right-flex btn-sprint">Metodika nasadzovania</div></a>            
+
+            <h1 class="section-title">OSTATNÉ DOKUMENTY</h1>
+            <a target="__blank" href="/documents/motivacny_dokument.pdf" class="methodic"><div class="methodic-txt right-flex btn-sprint">Motivačný dokument</div></a>
+            <a target="__blank" href="/documents/tp_cup.pdf" class="methodic"><div class="methodic-txt right-flex btn-sprint">Prihláška na TP CUP</div></a>
+            <br>
+            <a target="__blank" href="/documents/milnik_1.pdf" class="methodic"><div class="methodic-txt right-flex btn-sprint">Míľnik č. 1</div></a>
+            <a target="__blank" href="/documents/milnik_2.pdf" class="methodic"><div class="methodic-txt right-flex btn-sprint">Míľnik č. 2</div></a>
+            <a target="__blank" href="/documents/team08_riadenie_projektu.pdf" class="methodic"><div class="methodic-txt right-flex btn-sprint">Riadenie projektu</div></a>
+            <!--<a target="__blank" href="/documents/milnik_2.pdf" class="methodic"><div class="methodic-txt right-flex btn-sprint">Míľnik č. 2</div></a>-->
+          </div>
+
+        </section>
+
+
+        <section id="contact">
+          <h1 class="section-title">KONTAKT</h1>
+
+          <div class="contact-info">
+            <div>
+              <img src="images/email_icon.svg" class="email-icon">
+              <a class="email" href = "tim8.fiit.stuba@gmail.com">tim8.fiit.stuba@gmail.com</a>
+            </div>
+            
+            <img src="images/fiit_logo.png" class="fiit-logo">
+          </div>
+      
+        </section>
+      
+    </body>
+</html>
